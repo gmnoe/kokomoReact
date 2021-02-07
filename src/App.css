@@ -1,0 +1,7 @@
+.navbar-dark p, h3 {
+  color: rgb(41, 41, 41);
+}
+
+.navbar-dark {
+  background-image: linear-gradient(aqua, antiquewhite);
+}
