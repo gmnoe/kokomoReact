@@ -1,7 +1,48 @@
-.navbar-dark p, h3 {
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  font-family: 'Pacifico', cursive;
+  background-image: linear-gradient(antiquewhite, white);
+}
+
+.container-fluid {
+  background-image: linear-gradient(antiquewhite, white);
+
+}
+
+.navbar-dark p {
+  color: rgb(41, 41, 41);
+}
+
+.navbar-dark h3 {
+  font-family: 'Pacifico', cursive;
   color: rgb(41, 41, 41);
 }
 
 .navbar-dark {
   background-image: linear-gradient(aqua, antiquewhite);
+}
+
+#carouselImage {
+  height: 42vw;
+  width: 100vw;
+}
+
+#island {
+  font-family: 'Pacifico', cursive;
+}
+
+.carousel-caption, .card-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Pacifico', cursive;
+}
+
+#indexpic {
+  height: 400px;
+  width: 530px;
+  }
+  
+.site-footer {
+  background-image: linear-gradient(antiquewhite, white);
+  padding: 20px 0;
 }
