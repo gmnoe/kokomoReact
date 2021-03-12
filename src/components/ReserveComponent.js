@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardBody, Input, CardTitle, 
     Button, Label, Row, Col } from 'reactstrap';
-import { Control, LocalForm, Errors, Field } from 'react-redux-form';
+import { Control, LocalForm, Errors } from 'react-redux-form';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -50,7 +50,7 @@ class RenderReserve extends Component {
                                     className="form-control"
                                     placeholder="Enter Your Name..."
                                     validators={{
-                                        // required,
+                                        required,
                                         minLength: minLength(2),
                                         maxLength: maxLength(15)
                                     }}
@@ -75,7 +75,7 @@ class RenderReserve extends Component {
                                     className="form-control"
                                     placeholder="Number of People"
                                     validators={{
-                                        // required,
+                                        required,
                                         isNumber
                                     }}
                                 />
@@ -91,33 +91,48 @@ class RenderReserve extends Component {
                             />
                         </Col>
                     </div>
-                    <Row className="form-group row">
-                        <Col md={10}>
-                        <Label className="col-sm-2 col-form-label" htmlFor="date">Date:</Label>
-                            <Input
-                                type="date"
-                                name="date"
-                                id="exampleDate"
-                                placeholder="date placeholder"
-                                className="form-control"
-                                required
-                            />
-                        </Col>
-                    </Row>
                     <div className="form-group row">
-                        <Col>
-                        <Label className="col-sm-2 col-form-label" htmlFor="time">Time:</Label>
-                            <Input
-                                type="time"
-                                name="time"
-                                id="time"
-                                placeholder="time placeholder"
-                                className="form-control"
-                                required
+                        <Label htmlFor="date" className="col-sm-2 col-form-label">Date:</Label>
+                        <Col sm={10}>
+                            <Control type="date" model=".date" id="date" name="date" 
+                                    className="form-control"
+                                    placeholder="Number of People"
+                                    validators={{
+                                        required
+                                    }}
+                                />
+                            <Errors
+                                className="text-danger"
+                                model=".date"
+                                show="touched"
+                                Component="div"
+                                messages={{
+                                    required: 'Required'
+                                }}
                             />
                         </Col>
                     </div>
-                    <Button color="primary">Reserve A Table</Button>
+                    <div className="form-group row">
+                        <Label htmlFor="time" className="col-sm-2 col-form-label">Time:</Label>
+                        <Col sm={10}>
+                            <Control type="time" model=".time" id="time" name="time"
+                                    className="form-control"
+                                    validators={{
+                                        required
+                                    }}
+                                />
+                            <Errors
+                                className="text-danger"
+                                model=".time"
+                                show="touched"
+                                Component="div"
+                                messages={{
+                                    required: 'Required'
+                                }}
+                            />
+                        </Col>
+                    </div>
+                    <Button color="info">Reserve A Table</Button>
                 </LocalForm>
             </CardBody>
         </Card>

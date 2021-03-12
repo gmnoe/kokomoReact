@@ -1,5 +1,5 @@
 export const DRINKS = [
-    {
+    { 
         id: 0,
         name: 'Mai Tai',
         price: '$10',
@@ -7,9 +7,9 @@ export const DRINKS = [
     },
     {
         id: 1,
-        name: 'Zombie',
-        price: '$15',
-        description: 'Light and dark rums, orange curaçao, a trio of citrus juices, passion fruit puree, grenadine, and bitters'
+        name: 'Jungle Bird',
+        price: '$12',
+        description: 'Rum, lime, pineapple juice, and Campari'
     },
     {
         id: 2,
@@ -19,15 +19,15 @@ export const DRINKS = [
     },
     {
         id: 3,
-        name: 'Rum Runner',
-        price: '$11',
-        description: 'Light and dark rums, banana and blackberry liqueurs, orange and pineapple juices, and grenadine'
+        name: 'Zombie',
+        price: '$15',
+        description: 'Light and dark rums, orange curaçao, a trio of citrus juices, passion fruit puree, grenadine, and bitters'
     },
     {
         id: 4,
-        name: 'Jungle Bird',
-        price: '$12',
-        description: 'Rum, lime, pineapple juice, and Campari'
+        name: 'Rum Runner',
+        price: '$11',
+        description: 'Light and dark rums, banana and blackberry liqueurs, orange and pineapple juices, and grenadine'
     },
     {
         id: 5,

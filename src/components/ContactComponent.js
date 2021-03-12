@@ -54,7 +54,7 @@ class Contact extends Component {
                 </div>
                                 <div className="row row-content">
                     <div className="col-12">
-                        <h2>We would love to hear from you!</h2>
+                        <h2 id="cursive">We would love to hear from you!</h2>
                         <hr />
                     </div>
                     <div className="col-md-10">
@@ -170,7 +170,7 @@ class Contact extends Component {
                             </Row>
                             <Row className="form-group">
                                 <Col md={{size: 10, offset: 2}}>
-                                    <Button type="submit" color="primary">
+                                    <Button type="submit" color="info">
                                         Send Message
                                     </Button>
                                 </Col>

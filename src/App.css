@@ -7,7 +7,10 @@ body {
 
 .container-fluid {
   background-image: linear-gradient(antiquewhite, white);
+}
 
+h3, #kokomo, h5, h1, h2 {
+  font-family: 'Pacifico', cursive;
 }
 
 .navbar-dark p {
@@ -41,8 +44,17 @@ body {
   height: 400px;
   width: 530px;
   }
+
+#cursive {
+  font-family: 'Pacifico', cursive;
+}
   
 .site-footer {
   background-image: linear-gradient(antiquewhite, white);
   padding: 20px 0;
 }
+
+.menu {
+  text-align: left;
+}
+
