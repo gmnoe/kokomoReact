@@ -18,8 +18,6 @@ class Contact extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            agree: false,
-            contactType: 'By Phone',
             feedback: '',
             touched: {
                 firstName: false,

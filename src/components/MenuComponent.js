@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card } from 'reactstrap';
 import CardBody from 'reactstrap/lib/CardBody';
-import CardTitle from 'reactstrap/lib/CardHeader';
 
 function RenderDrinks({drink}) {
     return (
@@ -120,7 +119,7 @@ function Menu(props) {
                 </div>
             </div>
             <br />
-            <div className="row text-center">
+            <div className="menu">
                 <h1>Dessert</h1>
             </div>
             <hr />
@@ -134,6 +133,7 @@ function Menu(props) {
             </div>
             </CardBody>
                    </Card>
+                   <br /><br />
        </div>
 
     );

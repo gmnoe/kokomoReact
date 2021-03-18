@@ -39,7 +39,7 @@ class RenderReserve extends Component {
         return (
         <Card>
             <CardHeader className="bg-info text-white">
-                <CardTitle>Reserve A Table</CardTitle>
+                <CardTitle id="reserve">Reserve A Table</CardTitle>
             </CardHeader>
             <CardBody>
                 <LocalForm onSubmit={values => this.handleSubmit(values)}>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
+    Button, Modal, ModalHeader, ModalBody, 
+    Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import HomeCarousel from './CarouselComponent';
 
@@ -9,14 +11,23 @@ class Header extends Component {
         super(props);
         
         this.toggleNav = this.toggleNav.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
+
         this.state = {
-            isNavOpen: false
+            isNavOpen: false,
+            isModalOpen: false
         };
     }
 
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
+        });
+    }
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
         });
     }
 
@@ -44,20 +55,25 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/orderonline">
-                                        <p>Order Online</p>
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
+                                <NavLink className="nav-link" to="/contactus">
                                         <p>Contact</p>
                                     </NavLink>
                                 </NavItem>
+                                <NavLink className="nav-link" to="/orderonline">
+                                    <p>Order Online</p>
+                                </NavLink>
                             </Nav>
                         </Collapse>
                     </div>
                 </Navbar>
                 <HomeCarousel />
+
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+                    <ModalBody>
+
+                    </ModalBody>
+                </Modal>
             </React.Fragment>
         );
     }

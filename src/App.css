@@ -11,6 +11,7 @@ body {
 
 h3, #kokomo, h5, h1, h2 {
   font-family: 'Pacifico', cursive;
+  text-align: center;
 }
 
 .navbar-dark p {
@@ -24,6 +25,10 @@ h3, #kokomo, h5, h1, h2 {
 
 .navbar-dark {
   background-image: linear-gradient(aqua, antiquewhite);
+}
+
+#reserve {
+  font-size: 30px
 }
 
 #carouselImage {
@@ -55,6 +60,24 @@ h3, #kokomo, h5, h1, h2 {
 }
 
 .menu {
-  text-align: left;
+  text-align: center;
 }
 
+/* .menu:before, .menu:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.menu:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.menu:after {
+  left: 0.1em;
+  margin-right: -50%;
+} */
