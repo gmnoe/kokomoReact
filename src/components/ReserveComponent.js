@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, CardBody, Input, CardTitle, 
-    Button, Label, Row, Col } from 'reactstrap';
+import { Card, CardHeader, CardBody, CardTitle, 
+    Button, Label, Col } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 const required = val => val && val.length;
@@ -8,7 +8,7 @@ const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 
-class RenderReserve extends Component {
+class Reserve extends Component {
 
     constructor(props) {
         super(props);
@@ -140,4 +140,4 @@ class RenderReserve extends Component {
     }
 }
 
-export default RenderReserve;
+export default Reserve;

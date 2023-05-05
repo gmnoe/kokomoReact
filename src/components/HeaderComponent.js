@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, 
-    Button, Modal, ModalHeader, ModalBody, 
-    Form, FormGroup, Input, Label } from 'reactstrap';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import HomeCarousel from './CarouselComponent';
 
@@ -40,7 +38,7 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mx-auto ml-auto nav-fill w-100" navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/aboutus">
+                                    <NavLink className="nav-link" to="/about">
                                         <p>About</p>
                                     </NavLink>
                                 </NavItem>
@@ -55,18 +53,20 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                <NavLink className="nav-link" to="/contactus">
+                                <NavLink className="nav-link" to="/contact">
                                         <p>Contact</p>
                                     </NavLink>
                                 </NavItem>
-                                <NavLink className="nav-link" to="/orderonline">
+                                <NavLink className="nav-link" to="/order">
                                     <p>Order Online</p>
                                 </NavLink>
                             </Nav>
                         </Collapse>
                     </div>
                 </Navbar>
+                <div id="carousel">
                 <HomeCarousel />
+                </div>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>

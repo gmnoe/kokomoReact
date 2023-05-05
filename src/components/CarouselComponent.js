@@ -8,7 +8,7 @@ const items = [
     src: '../assets/images/homepagebeach.jpg',
     altText: 'Photo of beach',
     caption: 'About Us',
-    link: '/aboutus'
+    link: '/about'
   },
   {
     src: '../assets/images/carouselchicken.jpg',
@@ -20,7 +20,7 @@ const items = [
     src: '../assets/images/carouseldrinks.jpg',
     altText: 'People with drinks',
     caption: 'Contact Us',
-    link: '/contactus'
+    link: '/contact'
   }
 ];
 

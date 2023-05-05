@@ -4,9 +4,11 @@ import { DINNER } from '../shared/dinner';
 import { DESSERT } from '../shared/dessert';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
+import About from './AboutComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
+import Order from './OrderComponent';
 import { Redirect, Switch, Route } from 'react-router-dom';
 
 
@@ -16,7 +18,8 @@ class Main extends Component {
       this.state = {
         drinks: DRINKS,
         dinner: DINNER,
-        dessert: DESSERT      };
+        dessert: DESSERT      
+      };
     }
 
     render() {
@@ -25,10 +28,12 @@ class Main extends Component {
                 <Header />
                   <Switch>
                     <Route path='/home' component={Home} />
+                    <Route path='/about' component={About} />
                     <Route exact path='/menu' render={() => <Menu drinks={this.state.drinks} 
                                                                   dinner={this.state.dinner} 
                                                                   dessert={this.state.dessert} />} />
-                    <Route exact path='/contactus' component={Contact} />
+                    <Route exact path='/contact' component={Contact} />
+                    <Route exact path='/order' component={Order} />
                     <Redirect to='/home' />
                   </Switch>
                 <Footer />

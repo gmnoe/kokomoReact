@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 class Order extends Component {
     constructor(props) {
         super(props);
@@ -20,4 +22,20 @@ class Order extends Component {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is: ' + JSON.stringify(values));
     }
-}
+    render() {
+
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <h4>this is the item</h4>
+                    <h6>this is the desc</h6>
+                    <span><input></input></span>
+                    
+                </div>
+            </div>
+        </div>
+    );
+} }
+
+export default Order;  

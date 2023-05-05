@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
   background-image: linear-gradient(antiquewhite, white);
 }
 
@@ -13,6 +13,7 @@ h3, #kokomo, h5, h1, h2 {
   font-family: 'Pacifico', cursive;
   text-align: center;
 }
+
 
 .navbar-dark p {
   color: rgb(41, 41, 41);
@@ -36,6 +37,13 @@ h3, #kokomo, h5, h1, h2 {
   width: 100vw;
 }
 
+@media screen and (max-width: 913px ) {
+  #carouselImage {
+    height: 70vw;
+    width: 100vw;
+  }
+}
+
 #island {
   font-family: 'Pacifico', cursive;
 }
@@ -48,7 +56,16 @@ h3, #kokomo, h5, h1, h2 {
 #indexpic {
   height: 400px;
   width: 530px;
-  }
+}
+
+#aboutpic {
+  height: 500px;
+  width: 600px;
+}
+
+#about {
+  font-size: 20px;
+}
 
 #cursive {
   font-family: 'Pacifico', cursive;
@@ -70,7 +87,7 @@ h3, #kokomo, h5, h1, h2 {
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 50%;
+  width: 20%;
 }
 .menu:before {
   right: 0.5em;

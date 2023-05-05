@@ -12,22 +12,22 @@ function RenderDrinks({drink}) {
     );
 }
 
-function RenderDinner({drink}) {
+function RenderDinner({dinner}) {
     return (
         <React.Fragment>
-                        <span className="float-right font-weight-bold">{drink.price}</span>
-                        <h6>{drink.name}</h6>
-                        <p>{drink.description}</p>
+                        <span className="float-right font-weight-bold">{dinner.price}</span>
+                        <h6>{dinner.name}</h6>
+                        <p>{dinner.description}</p>
         </React.Fragment>
     );
 }
 
-function RenderDessert({drink}) {
+function RenderDessert({dessert}) {
     return (
         <React.Fragment>
-                        <span className="float-right font-weight-bold">{drink.price}</span>
-                        <h6>{drink.name}</h6>
-                        <p>{drink.description}</p>
+                        <span className="float-right font-weight-bold">{dessert.price}</span>
+                        <h6>{dessert.name}</h6>
+                        <p>{dessert.description}</p>
         </React.Fragment>
     );
 }
@@ -50,34 +50,34 @@ function Menu(props) {
         );
     });
 
-    const dinner1 = props.dinner.filter(item => item.id < 4).map(drink => {
+    const dinner1 = props.dinner.filter(item => item.id < 4).map(dinner => {
         return (
-            <div key={drink.id}>
-                <RenderDinner drink={drink} />
+            <div key={dinner.id}>
+                <RenderDinner dinner={dinner} />
             </div>
         );
     });
 
-    const dinner2 = props.dinner.filter(item => item.id > 3).map(drink => {
+    const dinner2 = props.dinner.filter(item => item.id > 3).map(dinner => {
         return (
-            <div key={drink.id}>
-                <RenderDinner drink={drink} />
+            <div key={dinner.id}>
+                <RenderDinner dinner={dinner} />
             </div>
         );
     });
 
-    const dessert1 = props.dessert.filter(item => item.id < 2).map(drink => {
+    const dessert1 = props.dessert.filter(item => item.id < 2).map(dessert => {
         return (
-            <div key={drink.id}>
-                <RenderDessert drink={drink} />
+            <div key={dessert.id}>
+                <RenderDessert dessert={dessert} />
             </div>
         );
     });
 
-    const dessert2 = props.dessert.filter(item => item.id > 1).map(drink => {
+    const dessert2 = props.dessert.filter(item => item.id > 1).map(dessert => {
         return (
-            <div key={drink.id}>
-                <RenderDessert drink={drink} />
+            <div key={dessert.id}>
+                <RenderDessert dessert={dessert} />
             </div>
         );
     });
@@ -91,7 +91,7 @@ function Menu(props) {
             <div className="row">
                 <div className="col">
                     <h1 class="menu">Cocktails</h1>
-                    <p>In addition to a full selection of beer and wine, 
+                    <p className="text-center">In addition to a full selection of beer and wine, 
                         Kokomo also offers a delicious line up of one-of-kind cocktails. Enjoy!
                     </p>
                     <hr />
@@ -106,7 +106,7 @@ function Menu(props) {
                 </div>
             </div>
             <br />
-            <div className="row">
+            <div className="row justify-content-center">
                 <h1 class="menu">Dinner</h1>
             </div>
             <hr />
